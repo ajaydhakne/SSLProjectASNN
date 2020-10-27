@@ -1,10 +1,7 @@
 <div class="login-page">
     <mat-card class="mat-elevation-z12">
-      <mat-card-title style="text-align:center;">Login</mat-card-title>
-      <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
-        <mat-tab label="Login">
-            <mat-card-content>
-              
+      <mat-card-title style="text-align:center;">Login</mat-card-title>      
+            <mat-card-content>              
                 <mat-form-field>
                   <input
                     matInput
@@ -32,7 +29,7 @@
                     </mat-error>
                     <mat-error
                       *ngIf="password.errors && password.errors.minlength">
-                      Password must be of length 8
+                      Password minimum length is 8
                     </mat-error>
                   <mat-icon matSuffix>lock</mat-icon>
                 </mat-form-field>
@@ -42,18 +39,8 @@
                   color="primary"
                   class="login-button">
                   Login
-                </button>
-  
-                <button
-                  mat-raised-button
-                  class="login-button">
-                  Login with Google
-                </button>
-            
-            </mat-card-content>
-        </mat-tab>
-   
-      </mat-tab-group>
+                </button>              
+            </mat-card-content>                 
     </mat-card>
   </div>
   
